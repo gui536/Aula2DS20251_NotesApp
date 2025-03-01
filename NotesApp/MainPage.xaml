@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotesApp.MainPage">
+
+         <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+        <Editor
+            x:Name="ConteudoEditor"
+            HeightRequest="150"/>
+
+        <HorizontalStackLayout
+            Padding="50"
+            Spacing="75"
+            HorizontalOptions="Center">
+            <Button
+                x:Name="SalvarButton"
+                Text="Guardar" 
+                SemanticProperties.Hint="Guarda o texto que foi escrito em um arquivo"
+                Clicked="SalvarButton_Clicked"
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="DeletarButton"
+                Text="Deletar"
+                SemanticProperties.Hint="Apaga o arquivo"
+                Clicked="DeletarButton_Clicked"
+                HorizontalOptions="Fill"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+
+
+</ContentPage>
