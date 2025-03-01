@@ -19,6 +19,7 @@
         {
 
             string conteudo = ConteudoEditor.Text;
+            //Código para combinar o caminho e o nome do arquivo
             File.WriteAllText(Path.Combine(caminho, arquivo),conteudo);
         }
 
